@@ -48,6 +48,13 @@ body::-webkit-scrollbar {
   outline: none;
 }
 
+.button [disabled] {
+  cursor: not-allowed;
+  border: #a1a1a1;
+  background: #ccc;
+  color: #a1a1a1;
+}
+
 .main-header {
   width: 100%;
   background: #2ddf5c;
