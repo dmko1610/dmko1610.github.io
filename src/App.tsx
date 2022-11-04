@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Intro />
       {/* <Timeline />
-      <Contact />
+      <Contact /> 
       <Footer /> */}
     </div>
   )
