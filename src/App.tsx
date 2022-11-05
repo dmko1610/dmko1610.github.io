@@ -1,13 +1,13 @@
+import Footer from './components/Footer'
 import Intro from './components/Intro'
 
 function App() {
-
   return (
-    <div className="App">
+    <div className="bg-stone-300 text-stone-900 min-h-screen font-mono">
       <Intro />
       {/* <Timeline />
-      <Contact /> 
-      <Footer /> */}
+      <Contact /> */}
+      <Footer />
     </div>
   )
 }
