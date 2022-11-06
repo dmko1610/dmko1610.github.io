@@ -3,9 +3,14 @@ export default function Footer() {
   const renderIcon = (url: string, imgSrc: string, alt: string) => {
     return (
       <a
+        target="_blank"
+        rel="noreferrer noopener"
         href={url}
         className="bg-stone-500 p-2 rounded-full">
-        <img className="w-5 w-5 fill-current" src={imgSrc} alt={alt} />
+        <img
+          className="w-5 w-5 fill-current"
+          src={imgSrc}
+          alt={alt} />
       </a>
     )
   }
