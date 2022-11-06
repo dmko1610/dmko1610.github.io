@@ -5,8 +5,8 @@ export default function Portfolio() {
         <div className="flex justify-center">
           <img className="mt-10" src="./fence.svg" alt="fence" />
         </div>
-        <p className="text-3xl my-10">
-          Section is under reconstruction! Please scroll down!
+        <p className="text-2xl font-bold my-10">
+          Section is under construction! Please scroll down!
         </p>
       </div>
     </div>
