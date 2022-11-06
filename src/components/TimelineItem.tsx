@@ -1,5 +1,5 @@
 interface IProps {
-  year: number;
+  year: number | string;
   title: string;
   duration: string;
   details: string;
