@@ -22,7 +22,7 @@ export default function Footer() {
         {renderIcon("https://www.linkedin.com/in/dmitry-kovalev-68791517a/", "./linkedin.svg", "linkedin")}
         {renderIcon("https://t.me/dmitrykovalev94", "./telegram.svg", "telegram")}
       </div>
-      <p className="text-sm mt-2 opacity-50">
+      <p className="text-sm dark:text-stone-300 mt-2 opacity-50">
         ©
         2022
         Dmitry Kovalev. All rights reserved.
