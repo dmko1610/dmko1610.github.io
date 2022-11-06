@@ -4,13 +4,13 @@ export default function Intro() {
       id="intro"
       className="flex items-center justify-center flex-col pt-20 pb-6">
       <div className="text-center">
-        <h1 className="text-4xl md:text-7xl mb-1 md:mb-3 font-bold">
+        <h1 className="text-4xl dark:text-stone-300 md:text-7xl mb-1 md:mb-3 font-bold">
           Dmitry Kovalev
         </h1>
-        <p className="text-base md:text-xl mb-3 font-medium">
+        <p className="text-base dark:text-stone-300 md:text-xl mb-3 font-medium">
           Software Engineer & JS Developer
         </p>
-        <p className="text-sm max-w-xl mb6 font-bold">
+        <p className="text-sm dark:text-stone-300 max-w-xl mb6 font-bold">
           Software Engineer with more that 6+ years overall experience in IT
           and 3+ years of experience as a JS Developer. Using React and React-Native
           for developing web and mobile applications. Has been awarded with bachelor's degree
