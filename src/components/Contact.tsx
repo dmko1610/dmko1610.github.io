@@ -1,3 +1,5 @@
+import Title from "./Title";
+
 export default function Contact() {
   return (
     <div className="flex flex-col justify-center items-center mb-10 mx-auto">
@@ -6,7 +8,7 @@ export default function Contact() {
         method="POST"
         className="flex flex-col w-full md:w-7/12"
       >
-        <h1 className="text-2xl dark:text-stone-300 font-bold underline underline-offset-8 decoration-4 text-stone-800 mb-5">Contact</h1>
+        <Title>Contact</Title>
         <input
           type="text"
           name="name"
