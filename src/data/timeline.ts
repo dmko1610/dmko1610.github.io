@@ -53,12 +53,21 @@ export default [
   },
   {
     id: 5,
-    year: "Today",
+    year: "2022",
     title: "Technical Assistant at AndersenLab",
-    duration: "Present time",
+    duration: "6 months",
     details:
       `I allocated as a technical assistant on Yonoton project. 
       The list of my responsibilites inclues: making calls with my padawan, consulting of component refactoring,
       help in case of deadlock issues.`,
+  },
+  {
+    id: 6,
+    year: "2022",
+    title: "JS Developer at AndersenLab",
+    duration: "Present time",
+    details:
+      `I allocated as a JS developer on Emilia project. 
+      Technologies I use: JavaScript, React, React Native, Jest, React-Native-Testing-Library, Postgres, GraphQL, CircleCI, Git.`,
   }
 ]
