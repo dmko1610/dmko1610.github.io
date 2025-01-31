@@ -71,5 +71,12 @@ export default [
       During my time on the project, I contributed to the development of various features, mentored new team members, and participated in beta and production releases.
       As a team we were committed to the Test Driven Design approach and thorough code review process.
       Technologies I used: JavaScript, React, React Native, Jest, React-Native-Testing-Library, Postgres, GraphQL, CircleCI, Git.`,
+  },
+  {
+    id: 7,
+    year: "2025",
+    title: "Looking for a job!",
+    duration: "Present time",
+    details: "",
   }
 ]
