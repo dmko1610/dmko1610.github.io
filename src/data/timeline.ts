@@ -65,9 +65,11 @@ export default [
     id: 6,
     year: "2022",
     title: "JS Developer at AndersenLab",
-    duration: "Present time",
+    duration: "2 years 3 months",
     details:
-      `I allocated as a JS developer on Emilia project. 
-      Technologies I use: JavaScript, React, React Native, Jest, React-Native-Testing-Library, Postgres, GraphQL, CircleCI, Git.`,
+      `I was allocated as a JavaScript developer on the Emilia project.
+      During my time on the project, I contributed to the development of various features, mentored new team members, and participated in beta and production releases.
+      As a team we were committed to the Test Driven Design approach and thorough code review process.
+      Technologies I used: JavaScript, React, React Native, Jest, React-Native-Testing-Library, Postgres, GraphQL, CircleCI, Git.`,
   }
 ]
