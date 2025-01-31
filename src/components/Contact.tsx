@@ -13,17 +13,17 @@ export default function Contact() {
           type="text"
           name="name"
           placeholder="Name"
-          className="p-2 bg-transparent border-2 rounded-md focus:outline-none" />
+          className="p-2 bg-transparent placeholder-gray-500 border-2 border-stone-800 dark:border-stone-300 rounded-md focus:outline-none" />
         <input
           type="text"
           name="email"
           placeholder="Email"
-          className="p-2 my-2 bg-transparent border-2 rounded-md focus:outline-none" />
+          className="p-2 my-2 bg-transparent placeholder-gray-500 border-2 border-stone-800 dark:border-stone-300 rounded-md focus:outline-none" />
         <textarea
           name="message"
           placeholder="Message"
           rows={10}
-          className="p-2 mb-4 bg-transparent border-2 rounded-md focus:outline-none" />
+          className="p-2 mb-4 bg-transparent placeholder-gray-500 border-2 border-stone-800 dark:border-stone-300 rounded-md focus:outline-none" />
         <button
           type="submit"
           className="text-center inline-block px-8 py-3 w-max text-base rounded-md bg-gradient-to-r from-yellow-500 to-pink-700 drop-shadow-md text-white hover:stroke-white">
