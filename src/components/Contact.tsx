@@ -1,16 +1,22 @@
 import { useState } from "react";
 import Title from "./Title";
 
+type Errors = {
+  name?: string;
+  email?: string;
+  message?: string;
+};
+
 export default function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" })
-  const [errors, setErrors] = useState({})
+  const [errors, setErrors] = useState<Errors>({})
 
   const handleChange = (e: { target: { name: string; value: string; } }) => {
     setFormData({ ...formData, [e.target.name]: e?.target.value })
   }
 
   const validateForm = () => {
-    let newErrors = {}
+    let newErrors: Errors = {}
     if (!formData.name.trim()) newErrors.name = "Name is required"
     if (!formData.email.trim()) newErrors.email = "Email is required"
     if (!formData.message.trim()) newErrors.message = "Message is required"
@@ -18,7 +24,7 @@ export default function Contact() {
     return newErrors
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
     const validationErrors = validateForm()
@@ -29,7 +35,7 @@ export default function Contact() {
     }
 
     setErrors({})
-    e.target.submit()
+    e.currentTarget.submit()
   }
 
   return (
