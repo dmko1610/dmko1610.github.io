@@ -24,7 +24,7 @@ export default function Footer() {
       </div>
       <p className="text-sm dark:text-stone-300 mt-2 opacity-50">
         ©
-        2022
+        2025
         Dmitry Kovalev. All rights reserved.
       </p>
     </div>
