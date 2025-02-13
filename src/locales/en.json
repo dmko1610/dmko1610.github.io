@@ -1,0 +1,12 @@
+{
+  "name": "Name",
+  "email": "Email",
+  "message": "Message",
+  "footer": "© 2025 Dmitry Kovalev. All rights reserved.",
+  "timeline": "Timeline",
+  "summary": "A Software Engineer with over 8 years of experience in IT and 5+ years as a Frontend Developer, specializing in React and React Native for web and mobile application development. Holds a Bachelor's degree in Programming Engineering and a Master's degree in Applied Informatics. Has worked on numerous projects as a React Native Developer. In addition to React and RN, is proficient in Node.js, GraphQL, and RESTful APIs. Prefers Git as a version control system. Committed to the principles of XP (Extreme Programming) and values DRY, KISS, and YAGNI principles. Passionate about writing clean, maintainable code.",
+  "specialization": "Software Engineer & Frontend Developer",
+  "owner_name": "Dmitry Kovalev",
+  "work_with_me": "Work with me",
+  "contact": "Contact"
+}
