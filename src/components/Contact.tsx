@@ -21,9 +21,9 @@ export default function Contact() {
 
   const validateForm = () => {
     let newErrors: Errors = {}
-    if (!formData.name.trim()) newErrors.name = "Name is required"
-    if (!formData.email.trim()) newErrors.email = "Email is required"
-    if (!formData.message.trim()) newErrors.message = "Message is required"
+    if (!formData.name.trim()) newErrors.name = t("validation_name")
+    if (!formData.email.trim()) newErrors.email = t("validation_email")
+    if (!formData.message.trim()) newErrors.message = t("validation_message")
 
     return newErrors
   }
@@ -55,23 +55,30 @@ export default function Contact() {
           type="text"
           name="name"
           placeholder={t("name")}
+          onChange={handleChange}
           className="p-2 bg-transparent placeholder-gray-500 border-2 border-stone-800 dark:border-stone-300 rounded-md focus:outline-hidden" />
         {errors.name && <p className="mt-1 ml-1 text-red-500 text-sm">{errors.name}</p>}
         <input
           type="text"
           name="email"
           placeholder={t("email")}
+          onChange={handleChange}
           className="p-2 my-2 bg-transparent placeholder-gray-500 border-2 border-stone-800 dark:border-stone-300 rounded-md focus:outline-hidden" />
         {errors.email && <p className="mb-2 ml-1 text-red-500 text-sm">{errors.email}</p>}
         <textarea
           name="message"
           placeholder={t("message")}
           rows={10}
+          onChange={handleChange}
           className="p-2 mb-1 bg-transparent placeholder-gray-500 border-2 border-stone-800 dark:border-stone-300 rounded-md focus:outline-hidden" />
-        {errors.message && <p className="mb-6 ml-1 text-red-500 text-sm">{errors.message}</p>}
+        {errors.message && <p className="ml-1 text-red-500 text-sm">{errors.message}</p>}
         <button
           type="submit"
-          className="text-center inline-block px-8 py-3 w-max text-base rounded-md bg-stone-900 dark:bg-orange-300 drop-shadow-md text-stone-300 dark:text-stone-900 hover:stroke-white">
+          className="text-center inline-block mt-6 px-8 py-3 w-max 
+          text-base rounded-md bg-stone-900 dark:bg-orange-300 drop-shadow-md 
+          text-stone-300 dark:text-stone-900
+          border-1 dark:border-orange-300 hover:border-stone-900 hover:dark:border-amber-700
+          hover:dark:bg-amber-700 hover:bg-stone-300 hover:text-stone-900">
           {t("work_with_me")}
         </button>
       </form>

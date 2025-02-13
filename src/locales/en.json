@@ -1,4 +1,7 @@
 {
+  "validation_name": "Name is required",
+  "validation_email": "Email is required",
+  "validation_message": "Message is required",
   "name": "Name",
   "email": "Email",
   "message": "Message",
