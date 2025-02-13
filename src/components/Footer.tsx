@@ -1,4 +1,7 @@
+import { useTranslation } from "react-i18next"
+
 export default function Footer() {
+  const { t } = useTranslation()
 
   const renderIcon = (url: string, imgSrc: string, alt: string) => {
     return (
@@ -23,9 +26,7 @@ export default function Footer() {
         {renderIcon("https://t.me/dmitrykovalev94", "./telegram.svg", "telegram")}
       </div>
       <p className="text-sm dark:text-stone-300 mt-2 opacity-50">
-        ©
-        2025
-        Dmitry Kovalev. All rights reserved.
+        {t('footer')}
       </p>
     </div>
   )

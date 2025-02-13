@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+
 import Title from "./Title";
 
 type Errors = {
@@ -8,6 +10,8 @@ type Errors = {
 };
 
 export default function Contact() {
+  const { t } = useTranslation()
+
   const [formData, setFormData] = useState({ name: "", email: "", message: "" })
   const [errors, setErrors] = useState<Errors>({})
 
@@ -46,29 +50,29 @@ export default function Contact() {
         className="flex flex-col w-full md:w-7/12"
         onSubmit={handleSubmit}
       >
-        <Title>Contact</Title>
+        <Title>{t("contact")}</Title>
         <input
           type="text"
           name="name"
-          placeholder="Name"
+          placeholder={t("name")}
           className="p-2 bg-transparent placeholder-gray-500 border-2 border-stone-800 dark:border-stone-300 rounded-md focus:outline-hidden" />
         {errors.name && <p className="mt-1 ml-1 text-red-500 text-sm">{errors.name}</p>}
         <input
           type="text"
           name="email"
-          placeholder="Email"
+          placeholder={t("email")}
           className="p-2 my-2 bg-transparent placeholder-gray-500 border-2 border-stone-800 dark:border-stone-300 rounded-md focus:outline-hidden" />
         {errors.email && <p className="mb-2 ml-1 text-red-500 text-sm">{errors.email}</p>}
         <textarea
           name="message"
-          placeholder="Message"
+          placeholder={t("message")}
           rows={10}
           className="p-2 mb-1 bg-transparent placeholder-gray-500 border-2 border-stone-800 dark:border-stone-300 rounded-md focus:outline-hidden" />
         {errors.message && <p className="mb-6 ml-1 text-red-500 text-sm">{errors.message}</p>}
         <button
           type="submit"
-          className="text-center inline-block px-8 py-3 w-max text-base rounded-md bg-linear-to-r from-yellow-500 to-pink-700 drop-shadow-md text-white hover:stroke-white">
-          Work with me
+          className="text-center inline-block px-8 py-3 w-max text-base rounded-md bg-stone-900 dark:bg-orange-300 drop-shadow-md text-stone-300 dark:text-stone-900 hover:stroke-white">
+          {t("work_with_me")}
         </button>
       </form>
     </div>

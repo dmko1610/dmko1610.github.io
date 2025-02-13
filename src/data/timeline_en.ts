@@ -6,7 +6,7 @@ export type TimelineItemType = {
   details: string;
 }
 
-export default [
+export const timelineEng = [
   {
     id: 1,
     year: 2016,
@@ -31,7 +31,7 @@ export default [
   {
     id: 3,
     year: 2019,
-    title: "JS Developer at Haulmont",
+    title: "Frontend Developer at Haulmont",
     duration: "2 years",
     details:
       `Took part in developing mobile app based on Thesis EDSM web application.
@@ -43,7 +43,7 @@ export default [
   {
     id: 4,
     year: 2021,
-    title: "JS Developer at AndersenLab",
+    title: "Frontend Developer at Andersen Lab",
     duration: "1 year",
     details:
       `Took part in developing and supporting several web & mobile apps on Yonoton project.
@@ -54,7 +54,7 @@ export default [
   {
     id: 5,
     year: "2022",
-    title: "Technical Assistant at AndersenLab",
+    title: "Technical Assistant at Andersen Lab",
     duration: "6 months",
     details:
       `I allocated as a technical assistant on Yonoton project. 
@@ -64,7 +64,7 @@ export default [
   {
     id: 6,
     year: "2022",
-    title: "JS Developer at AndersenLab",
+    title: "Frontend Developer at Andersen Lab",
     duration: "2 years 3 months",
     details:
       `I was allocated as a JavaScript developer on the Emilia project.
