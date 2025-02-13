@@ -5,19 +5,14 @@ export default function ThemeToggler() {
   const root = document.documentElement
 
   useEffect(() => {
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setTheme("dark")
-    } else {
-      setTheme("light")
-    }
+    const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
+    setTheme(systemTheme)
   }, [])
 
   useEffect(() => {
-    if (theme === "dark") {
-      root.classList.add("dark")
-    } else {
-      root.classList.remove("dark")
-    }
+    if (!theme) return
+
+    document.documentElement.classList.toggle("dark", theme == "dark")
   }, [theme])
 
   const handleToggleTheme = () => {
